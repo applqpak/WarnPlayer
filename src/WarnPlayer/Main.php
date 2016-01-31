@@ -7,6 +7,7 @@
   use pocketmine\utils\TextFormat as TF;
   use pocketmine\command\Command;
   use pocketmine\command\CommandSender;
+  use pocketmine\Player;
 
   class Main extends PluginBase implements Listener {
 
