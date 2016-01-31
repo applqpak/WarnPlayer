@@ -1,0 +1,13 @@
+name: WarnPlayer
+version: 1.0.0
+author: applqpak
+api: [1.0.0]
+main: WarnPlayer\Main
+commands:
+  warn:
+    description: Warn A Player.
+    usage: "/warn <player> < reason >"
+    permission: warnplayer.command.warn
+permissions:
+  warnplayer.command.warn:
+    default: op
