@@ -41,7 +41,7 @@
 
           $reason = implode(" ", $args);
 
-          if(!($player->isOnline())) {
+          if(!($player instanceof Player)) {
 
             $sender->sendMessage(TF::RED . "Player " . $name . " could not be found.");
 
