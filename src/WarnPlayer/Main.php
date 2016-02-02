@@ -33,6 +33,8 @@
 
           $player = $this->getServer()->getPlayer($name);
 
+          $player_name = $player->getName();
+
           $sender_name = $sender->getName();
 
           $sender_display_name = $sender->getDisplayName();
@@ -51,9 +53,9 @@
 
             $player->sendMessage(TF::RED . "You have been warned by " . $sender_name . " for " . $reason);
 
-            $sender->sendMessage(TF::GREEN . "You have warned " . $name . " for " . $reason);
+            $sender->sendMessage(TF::GREEN . "You have warned " . $player_name . " for " . $reason);
 
-            $this->getServer()->broadcastMessage(TF::YELLOW . $name . " has been warned by " . $sender_name . " for " . $reason);
+            $this->getServer()->broadcastMessage(TF::YELLOW . $player_name . " has been warned by " . $sender_name . " for " . $reason);
 
             return true;
 
